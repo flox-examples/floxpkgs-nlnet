@@ -9,6 +9,7 @@
   /*
   inputs.my-project.url = "github:me/myproject";
   */
+  inputs.rosenpass.url = "github:rosenpass/rosenpass";
 
   # =================================
 
@@ -31,6 +32,7 @@
         /*
         ext-pkg = context: context.capacitated.my-project.packages.ext-pkg;
         */
+        rosenpass = {inputs}: inputs.rosenpass.packages.rosenpass;
       };
 
       config = {
